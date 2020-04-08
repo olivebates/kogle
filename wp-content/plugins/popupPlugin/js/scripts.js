@@ -33,13 +33,7 @@ $(document).ready(function()
     }
     
     // Update the position of the popup, to always fit on screen
-    if ($(window).width() > 900) 
-    {
-        $(".pMainShell").css("top", window.pageYOffset - 1850);
-    }
-    else
-    {
-        $("body").css("overflow", "hidden");
-    }
+    
+    $(".pMainShell").css("top", window.pageYOffset + $(window).height() - 2800);
   }, 1);
 });

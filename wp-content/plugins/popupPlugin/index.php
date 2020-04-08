@@ -14,6 +14,7 @@ function popup_form()
     $content = '';
     $content .= '
 <!-- Background -->
+<div class="pFadeBack"></div>
 <div class="pMainShell">
   <img class="pBackground" src="https://i.imgur.com/lWz6D4g.png">
 </div>
