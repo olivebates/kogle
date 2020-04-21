@@ -5,8 +5,9 @@
   width: 80vw;
   position: absolute;
   left: 50%;
-  top: 100%;
+  top: 83%;
   transform: translate(-50%, -100%);
+  z-index: 1000000;
 }
 @media only screen and (min-width: 620px) {
   .pMainShell {
@@ -29,6 +30,7 @@
     right: 0;
     background: gray;
     opacity: 70%;
+  z-index: 900000;
 }
 
 
@@ -61,6 +63,7 @@
   width: 70%;
   left: 50%;
   transform: translate(-50%, -230%);
+  z-index: 1100000;
 }
 
 .pFacebook {
@@ -70,6 +73,7 @@
   position: absolute;
   left: 50%;
   transform: translate(-120%, -435%);
+  z-index: 1100000;
 }
 
 .pInstagram {
@@ -79,6 +83,7 @@
   position: absolute;
   left: 50%;
   transform: translate(20%, -435%);
+  z-index: 1100000;
 }
 
 .pClose {
@@ -88,8 +93,8 @@
   user-select: none;
   position: absolute;
   top: -550px;
-  left: 85%;
-  z-index: 10;
+  left: 85%; 
+  z-index: 1200000;
 }
 
 /* Animations */

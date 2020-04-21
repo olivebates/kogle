@@ -16,26 +16,26 @@ function popup_form()
 <!-- Background -->
 <div class="pFadeBack"></div>
 <div class="pMainShell">
-  <img class="pBackground" src="https://i.imgur.com/lWz6D4g.png">
+  <img class="pBackground" src="http://designosaurus.dk/kogle/wp-content/plugins/popupPlugin/img/ppBackground.png">
 </div>
 
 <div class="pMainShell">
   <!-- Text -->
   <div class="pTextAnimationShell">
-    <img class="pText" src="https://i.imgur.com/cfeRSvs.png">
+    <img class="pText" src="http://designosaurus.dk/kogle/wp-content/plugins/popupPlugin/img/ppText.png">
   </div>
   
   <!-- Facebook Icon -->
   <div class="pFacebookAnimationShell">
     <a src="https://www.facebook.com/koglebryg/">
-      <img class="pFacebook" src="https://i.imgur.com/lRcdMob.png">
+      <img class="pFacebook" src="http://designosaurus.dk/kogle/wp-content/plugins/popupPlugin/img/ppFacebook.png">
     </a>
   </div>
   
   <!-- Instagram Icon -->
   <div class="pInstagramAnimationShell">
     <a src="https://www.instagram.com/koglebryg/">
-      <img class="pInstagram" src="https://i.imgur.com/kWZMPgP.png">
+      <img class="pInstagram" src="http://designosaurus.dk/kogle/wp-content/plugins/popupPlugin/img/ppInsta.png">
     </a>
   </div>
   
@@ -48,13 +48,13 @@ function popup_form()
     return $content;
 }
 
-#First parameter
+#Shortcode
 add_shortcode('show_popup', 'popup_form');
 
 #Activate scripts and styles
-add_action('wp_enqueue_scripts', 'load_stylesheets');
+add_action('wp_enqueue_scripts', 'load_css_and_js');
 
-function load_stylesheets()
+function load_css_and_js()
 {
     #Load stylesheets
     wp_enqueue_style('CustomStylesheet', plugins_url('popupPlugin/css/styles.css'));

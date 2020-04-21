@@ -1,8 +1,6 @@
     // Make sure page is loaded
 $(document).ready(function()
 {
-  var yTrigger = document.body.scrollHeight - window.innerHeight - 200; // How far down on the page you need to scroll, to trigger the popup
-  var hasTriggered = false;
   
   // Create an eventlistener, that hides the popup when the close div is clicked
   $(".pClose").click(function(){
@@ -18,6 +16,12 @@ $(document).ready(function()
     $(".pFadeBack").css("display", "none");
   });
  
+  // Get y-coordinates for triggering the popup
+  var yTrigger = document.body.scrollHeight - window.innerHeight - 1000; // How far down on the page you need to scroll, to trigger the popup
+  
+  // Set flag to false
+  var hasTriggered = false;
+  
   // Create an eventlistener, that runs every millisecond
   window.setInterval(function()
   {
@@ -31,9 +35,8 @@ $(document).ready(function()
       $(".pMainShell").css("display", "block");
       $(".pFadeBack").css("display", "block");
     }
+  }, 1);
     
     // Update the position of the popup, to always fit on screen
-    
-    $(".pMainShell").css("top", window.pageYOffset + $(window).height() - 2800);
-  }, 1);
+    //$(".pMainShell").css("top", window.pageYOffset + $(window).height() - 2800);
 });
