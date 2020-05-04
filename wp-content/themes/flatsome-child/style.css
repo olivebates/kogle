@@ -17,16 +17,42 @@
   font-weight: normal;
 }
 
+/* Text */
 p, h1, h2, h3{
     font-family: gotham!important;
 }
 
+/* Old Guy */
 .secOldGuy {
     padding-top: 80px!important;
 }
 
 .secFooter {
     padding-top: 75px!important;
+}
+
+/* Sticky Button */
+.button.sticky-side-button {
+    float: left;
+	position: fixed;
+	top: calc(50% - 47px);
+	right: -60px;
+    transform: rotate(90deg);
+    z-index:9999;
+    cursor: pointer;
+}
+
+.accordion-title.plain  {
+    color:black;
+}
+
+.button:not(.icon).sticky-footer-button {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 9999;
+    border-radius:0px !important;
+    margin-bottom: 0em;
 }
 
 /*Nav Icon Animations*/
